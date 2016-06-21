@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>bpmn-js modeler demo</title>
+
+  <link rel="stylesheet" href="css/diagram-js.css" />
+  <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
+  <!--<link rel="stylesheet" href="css/app.css" />-->
+</head>
+<body>
+  <!--<div class="container-fluid width=100%" id="js-drop-zone">-->
+  <div class="container height=100%" id="js-drop-zone">
+
+    <div class="message intro">
+      <div class="note">
+        Drop BPMN diagram from your desktop or <a id="js-create-diagram" href>create a new diagram</a> to get started.
+      </div>
+    </div>
+
+    <div class="message error">
+      <div class="note">
+        <p>Ooops, we could not display the BPMN 2.0 diagram.</p>
+
+        <div class="details">
+          <span>cause of the problem</span>
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+
+    <div>
+    <ul class="buttons">
+      <li>
+        download
+      </li>
+      <li>
+        <a id="js-download-diagram" href title="download BPMN diagram">
+          BPMN diagram
+        </a>
+      </li>
+      <li>
+        <a id="js-download-svg" href title="download as SVG image">
+          SVG image
+        </a>
+      </li>
+    </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-8" id="js-canvas"></div>
+        <!--<div class="col-md-4" id="js-properties-panel"></div></span>-->
+    </div>
+  </div>
+
+<!-- Bootstrap goes here -->
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</html>
